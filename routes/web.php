@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Shop\MainController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//avant Laravel 8 :
+// Route::get('/home',"app/Http/Controllers/Shop/MainController@showProduit");
+// Route::get('/home',"Shop/MainController@showProduit");
+Route::get('/home',[MainController::class, 'showProduit']);
+
+
+// Route::get('/home', function () {
+//     return view('home');
+// });
