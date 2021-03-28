@@ -5,10 +5,10 @@
 
 {{-- {{dd($Oneproduct)}} --}}
 <div class="container">
-
+  <div class="row">
+    <img src="{{asset('img/personnage/'.$Oneproduct->photo_principal)}}" class="col-lg-9" alt="...">
 
     <div class="card col-lg-3" style="width: 18rem;">
-        <img src="{{asset('img/personnage/'.$Oneproduct->photo_principal)}}" class="card-img-top" alt="...">
         <div class="card-body">
         <h5 class="card-title">{{$Oneproduct->nom}}</h5>
         <p class="card-text">{{$Oneproduct->description}}</p>
@@ -17,6 +17,7 @@
         {{-- <a href="OneProduct/{{$produit->id}}" class="btn btn-primary">Voir ce produit</a> --}}
         </div>
     </div>
+  </div>
 </div>
 
 @endsection

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Shop;
 
 use App\Http\Controllers\Controller;
+use App\Models\Category;
 use App\Models\Produit;
 use Illuminate\Http\Request;
 
@@ -29,5 +30,13 @@ class MainController extends Controller
         //  dd($request);
         $Oneproduct = Produit::find($request->id);
         return view('layouts.OneProduct',compact('Oneproduct'));
+    }
+
+    public function MethodViewByCategory(){
+        //récupérer toutes les catégories >> is_online == 1
+        $categories = Category::WHERE('is_online',1)->get();
+        // dd($categories);
+
+        return view('layouts.categorie',compact('categories'));
     }
 }
