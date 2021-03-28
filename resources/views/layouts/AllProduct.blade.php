@@ -1,7 +1,10 @@
 @extends('template/htmlGabarit')
 
 @section('content')
-    {{-- coucou --}}
+@include('template/navBarCategory')
+
+
+
     <div class="container">
         {{-- {{dump($produits)}} --}}
         <div class="row">

@@ -24,6 +24,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        view()->composer(['template/htmlGabarit'], HeaderComposer::class);
+        view()->composer(['template/htmlGabarit', 'layouts/AllProduct', 'layouts/catergorie'], HeaderComposer::class);
     }
 }

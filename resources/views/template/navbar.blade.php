@@ -35,15 +35,10 @@
         </div>
     </div>
 </nav>
-<div class="container">
-    <ul class="row">
-        @foreach ($categories as $category)
-        <li class="nav-item col-lg-1">
-            <a class="nav-link" href="">{{$category->nom}}</a>
-        </li>
-        @endforeach
-    </ul>
-</div>
+
+
+{{-- @include('template/navBarCategory') --}}
+
 {{-- <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item active" aria-current="page">Films</li>
