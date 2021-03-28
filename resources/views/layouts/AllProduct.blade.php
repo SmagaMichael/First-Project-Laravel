@@ -1,6 +1,6 @@
-@extends('home')
-@section('AllProduct')
-    
+@extends('template/htmlGabarit')
+
+@section('content')
     {{-- coucou --}}
     <div class="container">
         {{-- {{dump($produits)}} --}}

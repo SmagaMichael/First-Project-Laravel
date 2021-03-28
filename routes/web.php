@@ -21,7 +21,7 @@ Route::get('/', function () {
 //avant Laravel 8 :
 // Route::get('/home',"app/Http/Controllers/Shop/MainController@showProduit");
 // Route::get('/home',"Shop/MainController@showProduit");
-Route::get('/home',[MainController::class, 'showProduit']);
+Route::get('/AllProduct',[MainController::class, 'AllProduct']);
 
 
 // Route::get('/home', function () {

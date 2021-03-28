@@ -8,14 +8,14 @@ use Illuminate\Http\Request;
 
 class MainController extends Controller
 {
-    public function showProduit(){
+    public function AllProduct(){
         //Select * from produits  
         //ce qui donnerait l'ensemble des produit de la table
 
         $produits = Produit::all();
         // dd($produits);
 
-        return view('layouts.showProduit',compact('produits'));
+        return view('layouts.AllProduct',compact('produits'));
         // ['produits'=>$produits]
     }
 }
