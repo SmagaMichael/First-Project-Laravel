@@ -26,13 +26,13 @@
 
         
         @include('template/navbar')
+
         @yield('content')
 
+        @include('template/footer')
 
 
 
-        <footer>
-            <p>Footer</p>        
-        </footer>
+      
     </body>
 </html>

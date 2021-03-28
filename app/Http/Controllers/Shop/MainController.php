@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class MainController extends Controller
 {
-    public function AllProduct(){
+    public function MethodAllProduct(){
         //Select * from produits  
         //ce qui donnerait l'ensemble des produit de la table
 
@@ -17,5 +17,17 @@ class MainController extends Controller
 
         return view('layouts.AllProduct',compact('produits'));
         // ['produits'=>$produits]
+    }
+
+
+
+    //méthode pour voir un seul produit 
+    //Select * from produits  WHERE id = ?
+
+    public function MethodOneProduct(Request $request){
+
+        //  dd($request);
+        $Oneproduct = Produit::find($request->id);
+        return view('layouts.OneProduct',compact('Oneproduct'));
     }
 }

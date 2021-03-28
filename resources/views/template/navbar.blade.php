@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+    <div class="container">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -34,4 +34,13 @@
         </form>
         </div>
     </div>
+</nav>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Films</li>
+        <li class="breadcrumb-item"><a href="#">Les goonies</a></li>
+        <li class="breadcrumb-item"><a href="#">Star Wars</a></li>
+        <li class="breadcrumb-item"><a href="#">Star Trek</a></li>
+        <li class="breadcrumb-item"><a href="#">Superman</a></li>
+    </ol>
 </nav>
