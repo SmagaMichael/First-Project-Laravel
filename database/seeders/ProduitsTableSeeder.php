@@ -21,6 +21,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Jean";
         $produit->photo_avatar = "littleJean.png";
         $produit->photo_principal = "Jean.png";
+        $produit->category_id = 1;
         $produit->save();
         
         $produit = new Produit();
@@ -29,6 +30,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Amber";
         $produit->photo_avatar = "littleAmber.png";
         $produit->photo_principal = "Amber.png";
+        $produit->category_id = 6;
         $produit->save();
 
         $produit = new Produit();
@@ -37,6 +39,8 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Lisa";
         $produit->photo_avatar = "littleLisa.png";
         $produit->photo_principal = "Lisa.png";
+        $produit->category_id = 5;
+
         $produit->save();
 
         $produit = new Produit();
@@ -45,6 +49,8 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Kaeya";
         $produit->photo_avatar = "littleKaeya.png";
         $produit->photo_principal = "Kaeya.png";
+        $produit->category_id = 2;
+
         $produit->save();
         
         $produit = new Produit();
@@ -53,6 +59,8 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Barbara";
         $produit->photo_avatar = "littleBarbara.png";
         $produit->photo_principal = "Barbara.png";
+        $produit->category_id = 3;
+
         $produit->save();
 
         $produit = new Produit();
@@ -61,6 +69,8 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Diluc";
         $produit->photo_avatar = "littleDiluc.png";
         $produit->photo_principal = "Diluc.png";
+        $produit->category_id = 6;
+
         $produit->save();
 
         $produit = new Produit();
@@ -69,6 +79,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Razor";
         $produit->photo_avatar = "littleRazor.png";
         $produit->photo_principal = "Razor.png";
+        $produit->category_id = 5;
         $produit->save();
 
         $produit = new Produit();
@@ -77,6 +88,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Venti";
         $produit->photo_avatar = "littleVenti.png";
         $produit->photo_principal = "Venti.png";
+        $produit->category_id = 1;
         $produit->save();
 
         $produit = new Produit();
@@ -85,6 +97,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Klee";
         $produit->photo_avatar = "littleKlee.png";
         $produit->photo_principal = "Klee.png";
+        $produit->category_id = 6;
         $produit->save();
 
         $produit = new Produit();
@@ -93,6 +106,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Bennett";
         $produit->photo_avatar = "littleBennett.png";
         $produit->photo_principal = "Bennett.png";
+        $produit->category_id =6;
         $produit->save();
 
         $produit = new Produit();
@@ -101,6 +115,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Noelle";
         $produit->photo_avatar = "littleNoelle.png";
         $produit->photo_principal = "Noelle.png";
+        $produit->category_id = 4;
         $produit->save();
         
 
@@ -110,6 +125,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Fischl";
         $produit->photo_avatar = "littleFischl.png";
         $produit->photo_principal = "Fischl.png";
+        $produit->category_id = 5;
         $produit->save();
 
         $produit = new Produit();
@@ -118,6 +134,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Sucrose";
         $produit->photo_avatar = "littleSucrose.png";
         $produit->photo_principal = "Sucrose.png";
+        $produit->category_id = 1;
         $produit->save();
 
         $produit = new Produit();
@@ -126,6 +143,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Mona";
         $produit->photo_avatar = "littleMona.png";
         $produit->photo_principal = "Mona.png";
+        $produit->category_id = 3;
         $produit->save();
 
         $produit = new Produit();
@@ -134,6 +152,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Diona";
         $produit->photo_avatar = "littleDiona.png";
         $produit->photo_principal = "Diona.png";
+        $produit->category_id = 2;
         $produit->save();
 
         $produit = new Produit();
@@ -142,6 +161,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Albedo";
         $produit->photo_avatar = "littleAlbedo.png";
         $produit->photo_principal = "Albedo.png";
+        $produit->category_id = 4;
         $produit->save();
 
         $produit = new Produit();
@@ -150,6 +170,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Xiao";
         $produit->photo_avatar = "littleXiao.png";
         $produit->photo_principal = "Xiao.png";
+        $produit->category_id = 1;
         $produit->save();
         
 
@@ -159,6 +180,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Beidou";
         $produit->photo_avatar = "littleBeidou.png";
         $produit->photo_principal = "Beidou.png";
+        $produit->category_id = 5;
         $produit->save();
 
         $produit = new Produit();
@@ -167,6 +189,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Ningguang";
         $produit->photo_avatar = "littleNingguang.png";
         $produit->photo_principal = "Ningguang.png";
+        $produit->category_id = 4;
         $produit->save();
 
         $produit = new Produit();
@@ -175,6 +198,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Xiangling";
         $produit->photo_avatar = "littleXiangling.png";
         $produit->photo_principal = "Xiangling.png";
+        $produit->category_id = 6;
         $produit->save();
 
         $produit = new Produit();
@@ -183,6 +207,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Xingqiu";
         $produit->photo_avatar = "littleXingqiu.png";
         $produit->photo_principal = "Xingqiu.png";
+        $produit->category_id = 3;
         $produit->save();
 
         $produit = new Produit();
@@ -191,6 +216,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Chongyun";
         $produit->photo_avatar = "littleChongyun.png";
         $produit->photo_principal = "Chongyun.png";
+        $produit->category_id = 2;
         $produit->save();
 
         $produit = new Produit();
@@ -199,6 +225,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Qiqi";
         $produit->photo_avatar = "littleQiqi.png";
         $produit->photo_principal = "Qiqi.png";
+        $produit->category_id = 2;
         $produit->save();
 
         $produit = new Produit();
@@ -207,6 +234,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Keqing";
         $produit->photo_avatar = "littleKeqing.png";
         $produit->photo_principal = "Keqing.png";
+        $produit->category_id = 5;
         $produit->save();
 
         $produit = new Produit();
@@ -215,6 +243,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Tartaglia";
         $produit->photo_avatar = "littleTartaglia.png";
         $produit->photo_principal = "Tartaglia.png";
+        $produit->category_id = 3;
         $produit->save();
 
         $produit = new Produit();
@@ -223,6 +252,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Zhongli";
         $produit->photo_avatar = "littleZhongli.png";
         $produit->photo_principal = "Zhongli.png";
+        $produit->category_id = 4;
         $produit->save();
 
         $produit = new Produit();
@@ -231,6 +261,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Xinyan";
         $produit->photo_avatar = "littleXinyan.png";
         $produit->photo_principal = "Xinyan.png";
+        $produit->category_id = 6;
         $produit->save();
 
         $produit = new Produit();
@@ -239,6 +270,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Ganyu";
         $produit->photo_avatar = "littleGanyu.png";
         $produit->photo_principal = "Ganyu.png";
+        $produit->category_id = 2;
         $produit->save();
 
         $produit = new Produit();
@@ -247,6 +279,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de HuTao";
         $produit->photo_avatar = "littleHuTao.png";
         $produit->photo_principal = "HuTao.png";
+        $produit->category_id = 6;
         $produit->save();
 
 

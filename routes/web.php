@@ -18,4 +18,4 @@ Route::get('/AllProduct', [MainController::class, 'MethodAllProduct']);
 Route::get('/OneProduct/{id}' , [MainController::class, 'MethodOneProduct'])->name('voir_produit');
 
 
-Route::get('/categorie' , [MainController::class, 'MethodViewByCategory']);
+Route::get('/categorie/{id}' , [MainController::class, 'MethodViewByCategory'])->name('voir_produit_par_cat');

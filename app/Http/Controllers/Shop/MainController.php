@@ -32,11 +32,17 @@ class MainController extends Controller
         return view('layouts.OneProduct',compact('Oneproduct'));
     }
 
-    public function MethodViewByCategory(){
+    public function MethodViewByCategory(Request $request){
         //récupérer toutes les catégories >> is_online == 1
-        $categories = Category::WHERE('is_online',1)->get();
+         $categories = Category::WHERE('is_online',1)->get();
         // dd($categories);
 
-        return view('layouts.categorie',compact('categories'));
+        //SELECT * FROM produits = category_id = $request->id
+        $produits = Produit::WHERE('category_id', $request->id)->get();
+        return view('layouts.categorie',compact('categories', 'produits'));
     }
+
+
+
+
 }
