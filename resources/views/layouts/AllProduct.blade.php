@@ -15,6 +15,15 @@
                 <div class="card-body">
                 <h5 class="card-title">{{$produit->nom}}</h5>
                 <p class="card-text">{{$produit->description}}</p>
+
+                <p>
+                    <span class="badge bg-dark">
+                        <a href="{{route('voir_produit_par_cat', ['id'=>$produit->category->id])}}">
+                            Type : {{$produit->category->nom}}
+                        </a>
+                    </span>
+                </p>
+
                 <p class="card-text">{{ number_format($produit->prix_ht,2)}}</p>
                 {{-- a la place de l'url en dur : OneProduct/{{$produit->id}} on se sert de  l'alias  --}}
                 {{-- <a href="OneProduct/{{$produit->id}}" class="btn btn-primary">Voir ce produit</a> --}}
