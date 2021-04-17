@@ -21,7 +21,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->description = "Description de Jean";
         $produit->photo_avatar = "littleJean.png";
         $produit->photo_principal = "Jean.png";
-        $produit->category_id = 1;
+        $produit->category_id = ;
         $produit->save();
         
         $produit = new Produit();

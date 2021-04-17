@@ -39,8 +39,14 @@ class MainController extends Controller
         // dd($categories);
 
         //SELECT * FROM produits = category_id = $request->id
-        $produits = Produit::WHERE('category_id', $request->id)->get();
+
+        //$produits = Produit::WHERE('category_id', $request->id)->get();
         $category = Category::find($request->id);
+        // dd($category->produitsParent); //produitsParent et produitsChild viennent des méthodes dans Category.php
+        // dd($category->produitsChild);
+        // dd($category->produits());
+        $produits = $category->produits();
+
 
 
         return view('layouts.categorie',compact('categories', 'produits', 'category'));
