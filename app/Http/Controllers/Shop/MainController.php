@@ -34,7 +34,8 @@ class MainController extends Controller
 
     public function MethodViewByCategory(Request $request){
         //récupérer toutes les catégories >> is_online == 1
-         $categories = Category::WHERE('is_online',1)->get();
+        $matches = ['is_online' => 1, 'parent_id'=>null];
+        $categories = Category::WHERE($matches)->get();
         // dd($categories);
 
         //SELECT * FROM produits = category_id = $request->id

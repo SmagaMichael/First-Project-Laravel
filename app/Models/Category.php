@@ -13,12 +13,12 @@ class Category extends Model
     //récupérer la catégorie parent d'une catégorie
     //OneToMany Reverse
     public function parent(){
-        $this->belongsTo('App\Models\Category', 'parent_id');
+        return $this->belongsTo('App\Models\Category', 'parent_id');
     }
 
     //on récupére les categorie enfant d'une catégorie 
     //OneToMany
     public function childrens(){
-        $this->hasMany('App\Models\Category', 'parent_id');
+        return $this->hasMany('App\Models\Category', 'parent_id');
     }
 }

@@ -8,7 +8,12 @@ use Illuminate\View\View;
 class HeaderComposer{
 
 public function compose(View $view){
-    $view->with('categories', Category::WHERE('is_online',1)->get());
+
+    //fonctionne pour la page Touts les personnages 
+    $matches = ['is_online' => 1, 'parent_id'=>null];
+    $view->with('categories', Category::WHERE($matches)->get());
+
+    // $view->with('categories', Category::WHERE('is_online',1)->get());
 }
 
 }
