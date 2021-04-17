@@ -3,13 +3,22 @@
 @section('content')
 @include('template/navBarCategory')
 
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">{{$category->nom}}</li>
+        <li class="breadcrumb-item"><a href="#">Les goonies</a></li>
+        <li class="breadcrumb-item"><a href="#">Star Wars</a></li>
+        <li class="breadcrumb-item"><a href="#">Star Trek</a></li>
+        <li class="breadcrumb-item"><a href="#">Superman</a></li>
+    </ol>
+</nav>
 
 <div class="container">
     {{-- {{dump($produits)}} --}}
     <div class="row">
 
     @foreach ($produits as $produit)
-        <div class="card col-lg-3 m-3" style="width: 18rem;">
+        <div class="card col-lg-2 m-3">
             <img src="{{asset('img/personnage/'.$produit->photo_avatar)}}" class="card-img-top" alt="...">
             <div class="card-body">
             <h5 class="card-title">{{$produit->nom}}</h5>

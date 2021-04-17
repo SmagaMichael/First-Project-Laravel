@@ -13,6 +13,9 @@
                 <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/AllProduct">Tout les personnages</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/AllProductTest">Tout les personnages Test</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
             </li>
             <li class="nav-item dropdown">
@@ -39,12 +42,3 @@
 
 {{-- @include('template/navBarCategory') --}}
 
-{{-- <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item active" aria-current="page">Films</li>
-        <li class="breadcrumb-item"><a href="#">Les goonies</a></li>
-        <li class="breadcrumb-item"><a href="#">Star Wars</a></li>
-        <li class="breadcrumb-item"><a href="#">Star Trek</a></li>
-        <li class="breadcrumb-item"><a href="#">Superman</a></li>
-    </ol>
-</nav> --}}

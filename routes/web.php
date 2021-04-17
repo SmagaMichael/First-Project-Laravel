@@ -12,6 +12,8 @@ Route::get('/', function () {return view('welcome');});
 // Route::get('/home',"Shop/MainController@showProduit");
 Route::get('/AllProduct', [MainController::class, 'MethodAllProduct']);
 
+Route::get('/AllProductTest', [MainController::class, 'MethodAllProduct']);
+
 //Route vers un produit
 //on peut nommer une route / lui donner un alias  que l'on utilisera dans un href 
 //on pourra donc changer l'url comme on le souhaite mais surtout pas l'alias ! 

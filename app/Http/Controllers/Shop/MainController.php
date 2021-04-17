@@ -39,7 +39,10 @@ class MainController extends Controller
 
         //SELECT * FROM produits = category_id = $request->id
         $produits = Produit::WHERE('category_id', $request->id)->get();
-        return view('layouts.categorie',compact('categories', 'produits'));
+        $category = Category::find($request->id);
+
+
+        return view('layouts.categorie',compact('categories', 'produits', 'category'));
     }
 
 
