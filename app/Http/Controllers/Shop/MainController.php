@@ -13,7 +13,10 @@ class MainController extends Controller
         //Select * from produits  
         //ce qui donnerait l'ensemble des produit de la table
 
-        $produits = Produit::all();
+        // $produits = Produit::all(); //afin d'améliorer le nombre de requete on commente cette ligne (pour la garder)
+        //et on la reprend et on la modifie en dessous par :  $produits = Produit::with('category')->get(); 
+        //on passe de 33requetes a 4 :o 
+        $produits = Produit::with('category')->get(); 
         // dd($produits);
 
         return view('layouts.AllProduct',compact('produits'));

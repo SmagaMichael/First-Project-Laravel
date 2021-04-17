@@ -39,7 +39,8 @@ class Category extends Model
     //fusion des 2 méthodes au dessus
     public function produits(){
         // $produits = $this->produitsParent(); on récupere bien les différentes collection
-        $produits = $this->produitsParent()->get()->merge($this->produitsChild()->get());
+        // $produits = $this->produitsParent()->get()->merge($this->produitsChild()->get());
+        $produits = $this->produitsParent()->with('category')->get()->merge($this->produitsChild()->with('category')->get());
         // dd($produits);
         return $produits;
     }
