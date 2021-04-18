@@ -6,21 +6,28 @@
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
 
-        @if ($category->parent_id !== null)
-            <li class="breadcrumb-item active" > 
-                <a href="{{ route('voir_produit_par_cat', ['id' =>$category->parent->id]) }}">
-                    {{$category->parent->nom}}
-                </a>
+        @if (isset($category))
+        
+            @if ($category->parent_id !== null)
+                <li class="breadcrumb-item active" > 
+                    <a href="{{ route('voir_produit_par_cat', ['id' =>$category->parent->id]) }}">
+                        {{$category->parent->nom}}
+                    </a>
+                </li>
+            @endif
+
+            <li class="breadcrumb-item active" >{{$category->nom}}</li>
+
+            @foreach ($category->childrens as $children)
+            <li class="breadcrumb-item active" >
+                <a href="{{ route('voir_produit_par_cat', ['id' =>$children->id]) }}">{{$children->nom}}</a>
             </li>
+            @endforeach
+
+        @else
+            <li class="breadcrumb-item active" ><a href="{{route('voir_produit_par_tag',['id'=>$tag])}}">{{$tag->nom}}</a></li>
         @endif
 
-        <li class="breadcrumb-item active" >{{$category->nom}}</li>
-
-        @foreach ($category->childrens as $children)
-        <li class="breadcrumb-item active" >
-            <a href="{{ route('voir_produit_par_cat', ['id' =>$children->id]) }}">{{$children->nom}}</a>
-        </li>
-        @endforeach
     </ol>
 </nav>
 

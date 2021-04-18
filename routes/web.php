@@ -10,7 +10,7 @@ Route::get('/', function () {return view('welcome');});
 //avant Laravel 8 :
 // Route::get('/home',"app/Http/Controllers/Shop/MainController@showProduit");
 // Route::get('/home',"Shop/MainController@showProduit");
-Route::get('/AllProduct', [MainController::class, 'MethodAllProduct']);
+Route::get('/AllProduct', [MainController::class, 'MethodAllProduct'])->name('voir_tout_les_produits');
 
 Route::get('/AllProductTest', [MainController::class, 'MethodAllProduct']);
 
@@ -21,3 +21,7 @@ Route::get('/OneProduct/{id}' , [MainController::class, 'MethodOneProduct'])->na
 
 
 Route::get('/categorie/{id}' , [MainController::class, 'MethodViewByCategory'])->name('voir_produit_par_cat');
+
+
+
+Route::get('/tag/{id}' , [MainController::class, 'MethodViewByTag'])->name('voir_produit_par_tag');

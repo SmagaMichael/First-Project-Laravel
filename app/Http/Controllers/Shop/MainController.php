@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Shop;
 use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Produit;
+use App\Models\Tag;
 use Illuminate\Http\Request;
 
 class MainController extends Controller
@@ -55,6 +56,15 @@ class MainController extends Controller
         return view('layouts.categorie',compact('categories', 'produits', 'category'));
     }
 
+    public function MethodViewByTag(Request $request){
+        $tag = Tag::find($request->id);
+        $produits = $tag->produits;
+
+        $matches = ['is_online' => 1, 'parent_id'=>null];
+        $categories = Category::WHERE($matches)->get();
+
+        return view('layouts.categorie',compact('categories','produits', 'tag'));
+    }
 
 
 
