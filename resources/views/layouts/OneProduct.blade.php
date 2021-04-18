@@ -59,4 +59,43 @@
   </div>
 </div>
 
+@if (count($Oneproduct->recommandations ) > 0)
+    <div class="album py-5 bg-light">
+      <div class="container">
+          <div class="row">
+              <h3>Vous aimerez aussi :</h3>
+          </div>
+          <div class="row">
+
+            @foreach ($Oneproduct->recommandations as $produit_recommande)
+              <div class="card col-5 col-lg-2 m-3" >
+                  <div class="card mb-4 box-shadow">
+                      <img src="{{asset('img/personnage/'.$produit_recommande->photo_avatar)}}" class="card-img-top img-fluid" alt="Responsive image">
+
+                      <div class="card-body">
+                        <h5 class="card-title">{{$produit_recommande->nom}}</h5>
+                        <p>
+                          <span class="badge bg-dark">
+                              <a href="{{route('voir_produit_par_cat', ['id'=>$produit_recommande->category->id])}}">
+                                  Type : {{$produit_recommande->category->nom}}
+                              </a>
+                          </span>
+                      </p>
+                          <div class="d-flex justify-content-end">
+                              <div class="btn-group">
+                                  <a href="{{route('voir_produit',['id'=>$produit_recommande->id])}}" class="btn btn-sm btn-outline-secondary">Voir ce produit</i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            @endforeach
+              
+
+          </div>
+      </div>
+    </div>
+@endif
+
+
 @endsection
