@@ -1,27 +1,29 @@
 @extends('template/htmlGabarit')
 
 @section('content')
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item " > 
-        <a href="{{ route('voir_tout_les_produits')}}">Tout les personnages</a>
-      </li>
-
-      @if ($Oneproduct->category->parent !== null)
-        <li class="breadcrumb-item " > 
-          <a href="{{ route('voir_produit_par_cat',['id' =>$Oneproduct->category->parent->id])}}">{{$Oneproduct->category->parent->nom}}</a>
-        </li>
-      @endif
-     
-
-      <li class="breadcrumb-item active" > 
-        <a href="{{ route('voir_produit_par_cat',['id' =>$Oneproduct->category->id])}}">{{$Oneproduct->category->nom}}</a>
-      </li>
-    </ol>
-</nav>
 
 {{-- {{dd($Oneproduct)}} --}}
 <div class="container">
+
+  <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+          <li class="breadcrumb-item " > 
+              <a href="{{ route('voir_tout_les_produits')}}">Tout les personnages</a>
+          </li>
+
+          @if ($Oneproduct->category->parent !== null)
+            <li class="breadcrumb-item " > 
+              <a href="{{ route('voir_produit_par_cat',['id' =>$Oneproduct->category->parent->id])}}">{{$Oneproduct->category->parent->nom}}</a>
+            </li>
+          @endif
+        
+
+          <li class="breadcrumb-item active" > 
+              <a href="{{ route('voir_produit_par_cat',['id' =>$Oneproduct->category->id])}}">{{$Oneproduct->category->nom}}</a>
+          </li>
+      </ol>
+  </nav>
+
   <div class="row">
     <img src="{{asset('img/personnage/'.$Oneproduct->photo_principal)}}" class="col-lg-9" alt="...">
 

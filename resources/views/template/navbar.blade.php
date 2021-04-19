@@ -10,12 +10,12 @@
                 <a class="nav-link active" aria-current="page" href="/">HomeLaravel</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/AllProduct">Tout les personnages</a>
+                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/AllProduct">Tous les personnages</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/AllProductTest">Tout les personnages Test</a>
+                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/AllProductTest">Tous les personnages Test</a>
             </li>
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
             </li>
             <li class="nav-item dropdown">
@@ -28,7 +28,7 @@
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
-            </li>
+            </li> --}}
           
         </ul>
         <form class="d-flex">

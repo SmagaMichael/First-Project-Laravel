@@ -1,0 +1,39 @@
+.categorie_white{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.p20{
+    padding: 20px;
+}
+
+.categorie_anemo{
+    background: linear-gradient(#329b9a, #26d091);
+    
+}
+.categorie_cryo{
+    background: linear-gradient(#61d6ed, #4bb1e140);
+  
+}
+.categorie_hydro{
+    background: linear-gradient(#07d6ffba, #0e1ee4);
+  
+}
+.categorie_geo{
+    background: linear-gradient(#ab5627, #000);
+}
+.categorie_electro{
+    background: linear-gradient(#5288e3ab, #880ff7);
+}
+.categorie_pyro{
+    background: linear-gradient(#EF9210, #e80c0c);
+}
+
+
+.card{
+    border: 2px solid black;
+    padding: 5px;
+}
+.card img{
+    border: 2px solid black;
+
+}
