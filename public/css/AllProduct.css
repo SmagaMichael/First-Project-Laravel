@@ -1,0 +1,6 @@
+.bgAllProduct{
+    background-image: url('../img/other/bgbodyall.png');
+    background-size: 100% auto;
+    padding-left: 80px;
+    /* object-fit: cover; */
+}

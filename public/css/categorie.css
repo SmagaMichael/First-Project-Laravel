@@ -7,25 +7,43 @@
 }
 
 .categorie_anemo{
-    background: linear-gradient(#329b9a, #26d091);
+    background-image: url('../img/other/wind.png'),
+    linear-gradient(#329b9a, #26d091);
+    /* background-size: 100% 100%; */
     
 }
 .categorie_cryo{
-    background: linear-gradient(#61d6ed, #4bb1e140);
+    background-image: url('../img/other/ice.png'),
+    linear-gradient(#61d6ed, #4bb1e140);
   
 }
 .categorie_hydro{
-    background: linear-gradient(#07d6ffba, #0e1ee4);
+    background-image: url('../img/other/bulle.png'),
+    linear-gradient(#07d6ffba, #0e1ee4);
+    background-size:  auto 100%;
   
 }
 .categorie_geo{
     background: linear-gradient(#ab5627, #000);
 }
 .categorie_electro{
-    background: linear-gradient(#5288e3ab, #880ff7);
+    background-image: url('../img/other/foudre.png'),
+    linear-gradient(#5288e3ab, #880ff7);
 }
 .categorie_pyro{
-    background: linear-gradient(#EF9210, #e80c0c);
+    background-image:  url('../img/other/fire.png'),
+    linear-gradient(#EF9210, #e80c0c);
+
+}
+
+.textColorWhite{
+    color: white;
+    font-weight: bold;
+}
+
+.textColorBlack{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
 }
 
 

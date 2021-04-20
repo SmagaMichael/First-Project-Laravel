@@ -1,8 +1,16 @@
 .footer{
     background-image: url('../img/cover/cover1.jpg');
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    /* background-size: 100% auto; */
+    object-fit: cover;
     height: 300px;
     width: 100%;
+    border: 10px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 3vw;
    
 }

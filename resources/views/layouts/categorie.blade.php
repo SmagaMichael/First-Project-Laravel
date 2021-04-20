@@ -56,7 +56,7 @@
         <div class="row">
     
         @foreach ($produits as $produit)
-            <div class="card col-lg-2 m-3">
+            <div class="card col-lg-2 col-md-3 col-5 m-3">
                 <img src="{{asset('img/personnage/'.$produit->photo_avatar)}}" class="card-img-top" alt="...">
                 <div class="card-body">
                 <h5 class="card-title">{{$produit->nom}}</h5>
@@ -75,17 +75,17 @@
                 
 
                 @if ($category->id == 1)
-                        <a href="{{route('voir_produit',['id'=>$produit->id])}}" class="btn categorie_anemo">Voir ce personnage</a>
+                        <a href="{{route('voir_produit',['id'=>$produit->id])}}" class="btn categorie_anemo textColorWhite">Voir ce personnage</a>
                     @elseif ($category->id == 2)
-                        <a href="{{route('voir_produit',['id'=>$produit->id])}}" class="btn categorie_cryo">Voir ce personnage</a>
+                        <a href="{{route('voir_produit',['id'=>$produit->id])}}" class="btn categorie_cryo textColorBlack">Voir ce personnage</a>
                     @elseif ($category->id == 3)
-                        <a href="{{route('voir_produit',['id'=>$produit->id])}}" class="btn categorie_hydro">Voir ce personnage</a>
+                        <a href="{{route('voir_produit',['id'=>$produit->id])}}" class="btn categorie_hydro textColorWhite">Voir ce personnage</a>
                     @elseif ($category->id == 4)
-                        <a href="{{route('voir_produit',['id'=>$produit->id])}}" class="btn categorie_geo">Voir ce personnage</a>
+                        <a href="{{route('voir_produit',['id'=>$produit->id])}}" class="btn categorie_geo textColorWhite">Voir ce personnage</a>
                     @elseif ($category->id == 5)
-                        <a href="{{route('voir_produit',['id'=>$produit->id])}}" class="btn categorie_electro">Voir ce personnage</a>
+                        <a href="{{route('voir_produit',['id'=>$produit->id])}}" class="btn categorie_electro textColorWhite">Voir ce personnage</a>
                     @elseif ($category->id == 6)
-                        <a href="{{route('voir_produit',['id'=>$produit->id])}}" class="btn categorie_pyro">Voir ce personnage</a>
+                        <a href="{{route('voir_produit',['id'=>$produit->id])}}" class="btn categorie_pyro textColorWhite">Voir ce personnage</a>
                     @else
                     
                 @endif
